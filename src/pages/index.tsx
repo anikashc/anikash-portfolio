@@ -40,7 +40,7 @@ const Home: NextPage = () => {
           alignItems="flex-start"
           maxWidth="700px"
         >
-          <Heading mb={2}>Hi, I'm {LandingData.name}</Heading>
+          <Heading mb={2}>Hi, I am {LandingData.name}</Heading>
           <Text color={colorSecondary[colorMode]}>
             {LandingData.description}
           </Text>
