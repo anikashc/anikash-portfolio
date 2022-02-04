@@ -34,7 +34,7 @@ export const Cards = [
         alt: 'Project 1',
         projectTitle: 'Project 1',
         projectDescription: 'This is a project',
-        date: '2020-01-01',
+        date: '2022-01-01',
     },
     {
         name: 'Blog 1',

@@ -22,7 +22,7 @@ interface Props {
   date: string;
 }
 
-export default function ProjectCard({cardData}: Props) {
+export default function ProjectCard({cardData}: {cardData: Props}) {
   return (
     <Center py={6}>
       <Box
