@@ -1,7 +1,7 @@
 import type { NextPage } from 'next'
 import Container from '../components/Container'
 import Head from 'next/head'
-import { Icon } from '@chakra-ui/react'
+import { Grid, Icon } from '@chakra-ui/react'
 import Link from 'next/link'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
@@ -12,7 +12,9 @@ import {
   Stack,
   Button,
 } from '@chakra-ui/react'
+import ProjectCard from '../components/ProjectCard'
 import {Links, LandingData} from '../data'
+import Projects from '../components/Projects'
 
 const Home: NextPage = () => {
   const { colorMode } = useColorMode()
@@ -45,6 +47,11 @@ const Home: NextPage = () => {
             {LandingData.description}
           </Text>
           <Button my={5} onClick={()=> window.open(Links.resume, "_blank")} variant='outline' data-splitbee-event="Button Click" data-splitbee-event-type="Resume" >View Resume</Button>
+
+        </Flex>
+        <Flex
+          alignItems='flex-start'
+        >
           <Link href={Links.github} passHref>
             <Icon w={8} h={8}>
               <FontAwesomeIcon icon={['fab', 'github']} />
@@ -70,9 +77,9 @@ const Home: NextPage = () => {
               <FontAwesomeIcon icon={['fab', 'envelope']} />
             </Icon>
           </Link>
-
         </Flex>
       </Stack>
+        <Projects />
     </Container>
   )
 }
