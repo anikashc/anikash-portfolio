@@ -25,7 +25,7 @@ const Home: NextPage = () => {
   return (
     <Container>
       <Head>
-        <title>Home - Benjamin Carlson</title>
+        <title>Home - Anikash Chakraborty</title>
       </Head>
       <Stack
         as="main"
